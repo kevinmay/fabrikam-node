@@ -5,6 +5,6 @@ mount -t cifs //vmss20191204.file.core.windows.net/linux /mnt/azurefiles -o vers
 
 cp /mnt/azurefiles/html/* /var/www/html                                                                    
 
-exch "hello from $HOSTNAME $(date)" > /mnt/azurefiles/$HOSTNAME-$(date +"%Y%m%d")-$(date +"%H%M%S").txt
+echo "hello from $HOSTNAME $(date)" > /mnt/azurefiles/$HOSTNAME-$(date +"%Y%m%d")-$(date +"%H%M%S").txt
 
 
